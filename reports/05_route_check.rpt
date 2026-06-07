@@ -1,0 +1,192 @@
+[icc2-lic Mon May 25 10:19:47 2026] Command 'check_routes' requires licenses
+[icc2-lic Mon May 25 10:19:47 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon May 25 10:19:47 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:19:47 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon May 25 10:19:47 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon May 25 10:19:47 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon May 25 10:19:47 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:19:47 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon May 25 10:19:47 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:19:47 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon May 25 10:19:47 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:19:47 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon May 25 10:19:47 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon May 25 10:19:47 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon May 25 10:19:47 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:19:47 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon May 25 10:19:47 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:19:47 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon May 25 10:19:47 2026] Check-out of alternate set of keys directly with queueing was successful
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = TOP_M
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Port VDD of cell cts
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Port VSS of cell cts
+        is unplaced.  This may impact routing result. (ZRT-740)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 9.98 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 9.98 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (706.820, 608.260) (987.660, 608.540). The shape's BBox is (706.820, 608.260) (987.660, 608.540). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (706.820, 403.860) (707.100, 608.540). The shape's BBox is (706.820, 403.860) (707.100, 608.540). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (560.685, 403.885) (707.075, 404.115). The shape's BBox is (560.685, 403.885) (707.075, 404.115). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (388.205, 402.765) (560.355, 402.995). The shape's BBox is (388.205, 402.765) (560.355, 402.995). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (388.205, 298.605) (560.135, 298.835). The shape's BBox is (388.205, 298.605) (560.135, 298.835). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (388.180, 298.580) (388.460, 403.020). The shape's BBox is (388.180, 298.580) (388.460, 403.020). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (383.165, 88.605) (560.135, 88.835). The shape's BBox is (383.165, 88.605) (560.135, 88.835). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (383.140, 194.420) (383.420, 298.860). The shape's BBox is (383.140, 194.420) (383.420, 298.860). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (383.165, 193.885) (560.135, 194.115). The shape's BBox is (383.165, 193.885) (560.135, 194.115). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (383.140, 88.580) (383.420, 194.140). The shape's BBox is (383.140, 88.580) (383.420, 194.140). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (239.905, 194.445) (383.395, 194.675). The shape's BBox is (239.905, 194.445) (383.395, 194.675). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (245.405, 88.605) (383.395, 88.835). The shape's BBox is (245.405, 88.605) (383.395, 88.835). (ZRT-142)
+Warning: PG net VSS has a path shape with shape_use detail_route and it is too long. Long part of the shape is located at (239.905, 402.765) (388.435, 402.995). The shape's BBox is (239.905, 402.765) (388.435, 402.995). (ZRT-142)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 10172, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 10172 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   31  Alloctr   32  Proc 13689 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :	 true                
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.eco_route_use_soft_spacing_for_timing_optimization:	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/25 Partitions, Violations =	0
+Checked	2/25 Partitions, Violations =	0
+Checked	3/25 Partitions, Violations =	0
+Checked	4/25 Partitions, Violations =	0
+Checked	5/25 Partitions, Violations =	0
+Checked	6/25 Partitions, Violations =	0
+Checked	7/25 Partitions, Violations =	0
+Checked	8/25 Partitions, Violations =	0
+Checked	9/25 Partitions, Violations =	0
+Checked	10/25 Partitions, Violations =	0
+Checked	11/25 Partitions, Violations =	0
+Checked	12/25 Partitions, Violations =	0
+Checked	13/25 Partitions, Violations =	0
+Checked	14/25 Partitions, Violations =	0
+Checked	15/25 Partitions, Violations =	0
+Checked	16/25 Partitions, Violations =	0
+Checked	17/25 Partitions, Violations =	0
+Checked	18/25 Partitions, Violations =	0
+Checked	19/25 Partitions, Violations =	0
+Checked	20/25 Partitions, Violations =	0
+Checked	21/25 Partitions, Violations =	0
+Checked	22/25 Partitions, Violations =	0
+Checked	23/25 Partitions, Violations =	0
+Checked	24/25 Partitions, Violations =	0
+Checked	25/25 Partitions, Violations =	0
+[DRC CHECK] Elapsed real time: 0:00:02 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used   98  Alloctr   99  Proc 13689 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+
+Total Wire Length =                    900277 micron
+Total Number of Contacts =             81482
+Total Number of Wires =                82847
+Total Number of PtConns =              8562
+Total Number of Routed Wires =       79715
+Total Routed Wire Length =           896728 micron
+Total Number of Routed Contacts =       81482
+	Layer          M1 :      44597 micron
+	Layer          M2 :     228433 micron
+	Layer          M3 :     331112 micron
+	Layer          M4 :     175274 micron
+	Layer          M5 :      97941 micron
+	Layer       TOP_M :      19371 micron
+	Via         VIA56 :        208
+	Via         VIA45 :       1624
+	Via         VIA34 :       8551
+	Via    VIA34(rot) :          1
+	Via         VIA23 :      36075
+	Via    VIA23(rot) :          2
+	Via        VIA12A :      30629
+	Via   VIA12A(rot) :       4392
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 81482 vias)
+ 
+    Layer V2         =  0.00% (0      / 35021   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (35021   vias)
+    Layer V3         =  0.00% (0      / 36077   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (36077   vias)
+    Layer V4         =  0.00% (0      / 8552    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (8552    vias)
+    Layer V5         =  0.00% (0      / 1624    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1624    vias)
+    Layer TOP_V      =  0.00% (0      / 208     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (208     vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 81482 vias)
+ 
+    Layer V2         =  0.00% (0      / 35021   vias)
+    Layer V3         =  0.00% (0      / 36077   vias)
+    Layer V4         =  0.00% (0      / 8552    vias)
+    Layer V5         =  0.00% (0      / 1624    vias)
+    Layer TOP_V      =  0.00% (0      / 208     vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 81482 vias)
+ 
+    Layer V2         =  0.00% (0      / 35021   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (35021   vias)
+    Layer V3         =  0.00% (0      / 36077   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (36077   vias)
+    Layer V4         =  0.00% (0      / 8552    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (8552    vias)
+    Layer V5         =  0.00% (0      / 1624    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1624    vias)
+    Layer TOP_V      =  0.00% (0      / 208     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (208     vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 10172, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+

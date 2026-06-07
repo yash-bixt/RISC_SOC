@@ -1,0 +1,140 @@
+[icc2-lic Sun May 24 23:31:10 2026] Command 'report_timing' requires licenses
+[icc2-lic Sun May 24 23:31:10 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun May 24 23:31:10 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun May 24 23:31:10 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun May 24 23:31:10 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun May 24 23:31:10 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun May 24 23:31:10 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun May 24 23:31:10 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun May 24 23:31:10 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun May 24 23:31:10 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun May 24 23:31:10 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun May 24 23:31:10 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun May 24 23:31:10 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun May 24 23:31:10 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun May 24 23:31:10 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun May 24 23:31:10 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun May 24 23:31:10 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun May 24 23:31:10 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun May 24 23:31:10 2026] Check-out of alternate set of keys directly with queueing was successful
+Information: Timer using 1 threads
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'risc_soc_lib:routed.design'. (TIM-125)
+Information: Design routed has 57786 nets, 0 global routed, 57784 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'soc_top'. (NEX-022)
+---extraction options---
+Corner: default
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.enable_coupling_cap    : false
+Extracting design: routed 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 57784 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 57784, routed nets = 57784, across physical hierarchy nets = 0, parasitics cached nets = 57784, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+ML Acceleration:                           off
+************************************************************
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : soc_top
+Version: U-2022.12-SP3
+Date   : Sun May 24 23:31:35 2026
+****************************************
+
+  Startpoint: u_cpu/instr_reg_reg[28] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_cpu/next_pc_reg_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 1.00      1.00
+
+  u_cpu/instr_reg_reg[28]/CP (dfnrn2)              0.00      1.00 r
+  u_cpu/instr_reg_reg[28]/QN (dfnrn2)              0.54      1.54 f
+  U1995/ZN (inv0d2)                                0.70      2.24 r
+  U3666/ZN (nr02d1)                                0.18      2.42 f
+  U1993/ZN (nd12d1)                                0.46      2.88 r
+  ctmTdsLR_1_2208/ZN (oai21d1)                     0.50      3.38 f
+  U3866/Z (bufbd1)                                 0.78      4.16 f
+  U2119/Z (mx02d0)                                 1.26      5.43 r
+  U3469/ZN (inv0d1)                                0.79      6.21 f
+  U2758/ZN (nr02d0)                                0.71      6.92 r
+  U2755/S (ad01d0)                                 0.62      7.54 f
+  U2377/CO (ad01d0)                                0.60      8.14 f
+  U4060/CO (ad01d0)                                0.48      8.63 f
+  U4065/S (ad01d0)                                 0.77      9.39 r
+  U2087/S (ad01d0)                                 0.52      9.91 f
+  U2320/Z (or02d0)                                 0.31     10.22 f
+  U2178/ZN (aoi21d1)                               0.30     10.52 r
+  U3213/ZN (oai21d1)                               0.12     10.64 f
+  U2172/ZN (aoi21d1)                               0.20     10.84 r
+  ctmTdsLR_1_2225/ZN (oai211d1)                    0.26     11.10 f
+  U2074/CO (ad01d0)                                0.50     11.60 f
+  U2073/CO (ad01d1)                                0.44     12.03 f
+  U2069/CO (ad01d0)                                0.43     12.46 f
+  U2067/CO (ad01d1)                                0.45     12.91 f
+  U2065/CO (ad01d0)                                0.47     13.37 f
+  U2063/CO (ad01d0)                                0.45     13.82 f
+  U3627/CO (ad01d0)                                0.43     14.26 f
+  U3617/CO (ad01d0)                                0.43     14.69 f
+  U2057/CO (ad01d0)                                0.44     15.13 f
+  U2055/CO (ad01d0)                                0.45     15.58 f
+  U2051/CO (ad01d0)                                0.46     16.04 f
+  U4152/CO (ad01d0)                                0.46     16.51 f
+  U2451/S (ad01d0)                                 0.74     17.25 f
+  ctmTdsLR_1_2620/Z (aor221d1)                     0.41     17.66 f
+  ctmTdsLR_1_2666/Z (or04d0)                       0.29     17.95 f
+  ctmTdsLR_1_2727/Z (or03d1)                       0.61     18.56 f
+  ctmTdsLR_1_1945/ZN (oaim21d1)                    0.30     18.86 f
+  ctmTdsLR_2_2165/ZN (inv0d1)                      0.16     19.03 r
+  ctmTdsLR_1_2164/Z (aor21d1)                      0.37     19.39 r
+  ctmTdsLR_1_2192/Z (aor21d1)                      0.32     19.71 r
+  U2136/ZN (inv0d1)                                0.14     19.85 f
+  U2490/ZN (invbd2)                                0.26     20.11 r
+  ctmTdsLR_1_2751/ZN (nd13d1)                      0.15     20.26 f
+  U4969/Z (aor31d1)                                0.35     20.61 f
+  u_cpu/next_pc_reg_reg[4]/D (dfnrn2)              0.00     20.61 f
+  data arrival time                                         20.61
+
+  clock clk (rise edge)                           20.00     20.00
+  clock network delay (propagated)                 0.99     20.99
+  u_cpu/next_pc_reg_reg[4]/CP (dfnrn2)             0.00     20.99 r
+  clock uncertainty                               -0.20     20.79
+  library setup time                              -0.18     20.62
+  data required time                                        20.62
+  ------------------------------------------------------------------------
+  data required time                                        20.62
+  data arrival time                                        -20.61
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.00
+
+
+1

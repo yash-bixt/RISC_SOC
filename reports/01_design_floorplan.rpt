@@ -1,0 +1,73 @@
+****************************************
+Report : design
+Design : soc_top
+Version: U-2022.12-SP3
+Date   : Mon May 25 10:14:10 2026
+****************************************
+
+Total number of std cells in library : 534
+Total number of dont_use lib cells   : 3
+Total number of dont_touch lib cells : 3
+Total number of buffers              : 26
+Total number of inverters            : 13
+Total number of flip-flops           : 120
+Total number of latches              : 60
+Total number of ICGs                 : 20
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS     9015   454415.008
+unit                 9007   233133.376
+Standard cells       9007   233133.376
+unit                 9007   233133.376
+Hard macro cells        8   221281.632
+unit                 9007   233133.376
+Soft macro cells        0        0.000
+unit                 9007   233133.376
+Always on cells         0        0.000
+unit                 9007   233133.376
+Physical only           0        0.000
+unit                 9007   233133.376
+Fixed cells             8   221281.632
+unit                 9007   233133.376
+Moveable cells       9007   233133.376
+unit                 9007   233133.376
+Sequential           1536   315571.744
+unit                 9007   233133.376
+Buffer/inverter      1223     9878.400
+unit                 9007   233133.376
+ICG cells               0        0.000
+unit                 9007   233133.376
+
+Logic Hierarchies                    : 1
+Design Masters count                 : 94
+Total Flat nets count                : 10506
+Total FloatingNets count             : 7
+Total no of Ports                    : 101
+Number of Master Clocks in design    : 1
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 7 (1 of them Non Default)
+Number of Scan Chains in design      : 0
+List of Modes                        : default
+List of Corners                      : default
+List of Scenarios                    : default
+
+Core Area                            : 824535.936
+Chip Area                            : 976222.336
+Total Site Row Area                  : 824535.936
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 37 (31 of them have unknown routing dir.)
+
+Total wire length                    : 0.00 micron
+Total number of wires                : 0
+Total number of contacts             : 0
+1

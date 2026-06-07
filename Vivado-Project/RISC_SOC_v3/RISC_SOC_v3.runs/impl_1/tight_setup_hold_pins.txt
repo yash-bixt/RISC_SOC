@@ -1,0 +1,28 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                    u_soc/FSM_sequential_tx_state_reg[1]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                    u_soc/FSM_sequential_tx_state_reg[0]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                    u_soc/FSM_sequential_tx_state_reg[2]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[28]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  u_soc/trace_alu_reg[0]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[14]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[29]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[15]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[31]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[11]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[10]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[12]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  u_soc/trace_alu_reg[9]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  u_soc/trace_alu_reg[8]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[24]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[20]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[25]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[17]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[16]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  u_soc/trace_alu_reg[6]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[21]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  u_soc/trace_alu_reg[7]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                  u_soc/trace_alu_reg[1]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                 u_soc/trace_alu_reg[19]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

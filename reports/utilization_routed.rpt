@@ -1,0 +1,26 @@
+****************************************
+Report : report_utilization
+Design : soc_top
+Version: U-2022.12-SP3
+Date   : Sun May 24 22:27:45 2026
+****************************************
+Utilization Ratio:			0.6018
+Utilization options:
+ - Area calculation based on:		site_row of block placed
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				3041948.2240
+Total Capacity Area:			3041948.2240
+Total Area of cells:			1830727.8080
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+Total Area of excluded objects:		0.0000
+Ratio of excluded objects:		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.6018
+
+0.6018

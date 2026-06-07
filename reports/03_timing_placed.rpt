@@ -1,0 +1,135 @@
+[icc2-lic Mon May 25 10:14:36 2026] Command 'report_timing' requires licenses
+[icc2-lic Mon May 25 10:14:36 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon May 25 10:14:36 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:14:36 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon May 25 10:14:36 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon May 25 10:14:36 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon May 25 10:14:36 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:14:36 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon May 25 10:14:36 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:14:36 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon May 25 10:14:36 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:14:36 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon May 25 10:14:36 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon May 25 10:14:36 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon May 25 10:14:36 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:14:36 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon May 25 10:14:36 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:14:36 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon May 25 10:14:36 2026] Check-out of alternate set of keys directly with queueing was successful
+Information: The RC mode used is VR for design 'soc_top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 10499, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 10498, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : soc_top
+Version: U-2022.12-SP3
+Date   : Mon May 25 10:14:39 2026
+****************************************
+
+  Startpoint: u_cpu/op_b_reg_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_cpu/next_pc_reg_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_cpu/op_b_reg_reg[1]/CP (dfnrn1)                0.00      0.00 r
+  u_cpu/op_b_reg_reg[1]/QN (dfnrn1)                0.41      0.41 f
+  U3112/ZN (inv0d1)                                3.01      3.41 r
+  U3073/Z (mx02d1)                                 0.40      3.81 r
+  U2144/ZN (invbd2)                                0.25      4.06 f
+  U3124/ZN (invbd4)                                0.17      4.23 r
+  U3125/ZN (nd02d2)                                0.11      4.34 f
+  U2127/ZN (inv0d4)                                0.23      4.56 r
+  U2121/ZN (inv0d4)                                0.15      4.71 f
+  U2112/ZN (nr03d1)                                0.79      5.50 r
+  U3672/ZN (nr02d1)                                0.27      5.76 f
+  U2313/CO (ad01d1)                                0.46      6.23 f
+  U2308/S (ad01d0)                                 0.81      7.03 r
+  U2298/S (ad01d0)                                 0.52      7.56 f
+  U3782/ZN (nd02d0)                                0.21      7.77 r
+  U3785/ZN (nd02d0)                                0.14      7.90 f
+  U3786/ZN (nd03d1)                                0.18      8.08 r
+  U2259/CO (cg01d1)                                0.27      8.34 r
+  U3788/ZN (nd02d0)                                0.13      8.47 f
+  U3795/ZN (nd02d0)                                0.13      8.60 r
+  U2256/ZN (nd02d1)                                0.12      8.71 f
+  U3798/ZN (nd12d1)                                0.20      8.91 f
+  U2915/ZN (nd02d0)                                0.13      9.04 r
+  U3802/ZN (nd03d1)                                0.15      9.20 f
+  U3803/CO (cg01d1)                                0.33      9.52 f
+  U3807/ZN (nd02d2)                                0.12      9.65 r
+  U3809/Z (ora21d1)                                0.17      9.82 r
+  U3810/ZN (aon211d1)                              0.17      9.98 f
+  U3811/CO (cg01d1)                                0.36     10.34 f
+  U3815/ZN (nd02d2)                                0.12     10.46 r
+  U3816/Z (ora21d1)                                0.17     10.63 r
+  U3817/ZN (aon211d1)                              0.21     10.84 f
+  U2249/ZN (nd02d1)                                0.15     10.99 r
+  U3061/ZN (nd02d1)                                0.13     11.11 f
+  U3823/ZN (nd12d1)                                0.20     11.31 f
+  U2246/ZN (nd02d1)                                0.16     11.48 r
+  U3824/ZN (nd12d1)                                0.12     11.60 f
+  U3828/ZN (aoi21d1)                               0.23     11.83 r
+  U3829/ZN (aon211d1)                              0.22     12.05 f
+  U2411/ZN (nd12d1)                                0.22     12.27 f
+  U2242/ZN (nd02d1)                                0.15     12.42 r
+  U3851/ZN (nd12d1)                                0.12     12.54 f
+  U3855/ZN (nd12d1)                                0.10     12.65 r
+  U3856/ZN (nd12d1)                                0.19     12.84 r
+  U3858/ZN (nd03d2)                                0.19     13.03 f
+  U3859/ZN (nd12d1)                                0.14     13.17 r
+  U2136/ZN (nd12d0)                                0.23     13.40 r
+  U3861/ZN (nd12d1)                                0.13     13.53 f
+  U3862/CO (cg01d1)                                0.30     13.83 f
+  U3864/ZN (nr02d1)                                0.17     14.00 r
+  U3865/ZN (aoi21d1)                               0.08     14.08 f
+  U2415/Z (or02d1)                                 0.29     14.37 f
+  U3866/ZN (oan211d1)                              0.33     14.70 r
+  U2228/ZN (inv0d1)                                0.07     14.77 f
+  U2148/CO (cg01d1)                                0.27     15.05 f
+  U3473/Z (xr02d1)                                 0.39     15.44 r
+  U3480/Z (xr03d1)                                 0.31     15.75 f
+  U3481/Z (xr03d1)                                 0.54     16.29 r
+  U3482/Z (xr02d1)                                 0.45     16.74 f
+  U3494/Z (xr03d1)                                 0.27     17.01 r
+  U3867/Z (xr02d1)                                 0.53     17.54 f
+  U3964/ZN (aoi21d1)                               0.34     17.88 r
+  U2225/ZN (nd02d1)                                0.14     18.02 f
+  U2222/ZN (nd12d1)                                0.28     18.30 f
+  U4736/ZN (xn02d1)                                0.44     18.73 r
+  U2147/ZN (nr02d2)                                0.08     18.81 f
+  U4740/ZN (nr02d1)                                0.18     18.99 r
+  U2146/Z (an02d1)                                 0.31     19.31 r
+  U2221/ZN (inv0d4)                                0.15     19.45 f
+  U2140/ZN (nr02d0)                                0.31     19.76 r
+  U2214/ZN (nr02d1)                                0.14     19.90 f
+  U4757/ZN (oai21d1)                               0.11     20.01 r
+  u_cpu/next_pc_reg_reg[13]/D (dfnrn1)             0.00     20.01 r
+  data arrival time                                         20.01
+
+  clock clk (rise edge)                           20.00     20.00
+  clock network delay (ideal)                      0.00     20.00
+  u_cpu/next_pc_reg_reg[13]/CP (dfnrn1)            0.00     20.00 r
+  clock uncertainty                               -0.20     19.80
+  library setup time                              -0.19     19.61
+  data required time                                        19.61
+  ------------------------------------------------------------------------
+  data required time                                        19.61
+  data arrival time                                        -20.01
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.40
+
+
+1

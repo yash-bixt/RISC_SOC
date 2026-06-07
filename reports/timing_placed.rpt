@@ -1,0 +1,127 @@
+[icc2-lic Sun May 24 22:24:08 2026] Command 'report_timing' requires licenses
+[icc2-lic Sun May 24 22:24:08 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Sun May 24 22:24:08 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun May 24 22:24:08 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun May 24 22:24:08 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Sun May 24 22:24:08 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Sun May 24 22:24:08 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Sun May 24 22:24:08 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Sun May 24 22:24:08 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Sun May 24 22:24:08 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Sun May 24 22:24:08 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun May 24 22:24:08 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun May 24 22:24:08 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Sun May 24 22:24:08 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Sun May 24 22:24:08 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Sun May 24 22:24:08 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Sun May 24 22:24:08 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Sun May 24 22:24:08 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Sun May 24 22:24:08 2026] Check-out of alternate set of keys directly with queueing was successful
+Warning: no valid parasitic for default corner(LATE) (NEX-018)
+Warning: no valid parasitic for default corner(EARLY) (NEX-018)
+Warning: no valid parasitic for (all corners) corner((both specs)) (NEX-018)
+Information: The stitching and editing of coupling caps is turned OFF for design 'risc_soc_lib:floorplanned.design'. (TIM-125)
+Warning: The extractor can not be initialized for block 'floorplanned'. (TIM-103)
+Warning: The extractor can not be initialized for design 'soc_top'. Zero interconnect delay is used in timing analysis. (TIM-102)
+Warning: Batch extraction is skipped for block "soc_top"
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 57250, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : soc_top
+Version: U-2022.12-SP3
+Date   : Sun May 24 22:24:12 2026
+****************************************
+
+  Startpoint: u_cpu/instr_reg_reg[29] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_cpu/next_pc_reg_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  u_cpu/instr_reg_reg[29]/CP (dfnrn1)              0.00      0.00 r
+  u_cpu/instr_reg_reg[29]/QN (dfnrn1)              0.43      0.43 f
+  U3665/ZN (nd03d2)                                0.13      0.56 r
+  U3666/ZN (nr02d2)                                0.05      0.61 f
+  U1994/ZN (inv0d1)                                0.13      0.74 r
+  U3864/ZN (nr02d2)                                0.05      0.79 f
+  U3865/ZN (nd12d2)                                0.17      0.96 f
+  U3866/Z (buffda)                                 0.23      1.20 f
+  U3405/Z (mx02d1)                                 0.58      1.77 r
+  U3484/ZN (inv0d4)                                0.12      1.89 f
+  U2675/ZN (nr02d0)                                0.47      2.36 r
+  U2674/S (ad01d0)                                 0.59      2.95 f
+  U2875/S (ad01d0)                                 0.78      3.73 r
+  U3027/S (ad01d0)                                 0.57      4.30 f
+  U3135/S (ad01d0)                                 0.75      5.05 r
+  U2188/S (ad01d0)                                 0.49      5.54 f
+  U3232/Z (or02d0)                                 0.28      5.82 f
+  U2177/ZN (aoi21d1)                               0.21      6.04 r
+  U3614/ZN (oai21d1)                               0.15      6.19 f
+  U2074/CO (ad01d1)                                0.39      6.58 f
+  U2073/CO (ad01d1)                                0.39      6.96 f
+  U2069/CO (ad01d1)                                0.39      7.35 f
+  U2067/CO (ad01d1)                                0.39      7.74 f
+  U2065/CO (ad01d1)                                0.39      8.13 f
+  U2063/CO (ad01d1)                                0.39      8.52 f
+  U3627/CO (ad01d1)                                0.39      8.90 f
+  U3617/CO (ad01d1)                                0.39      9.29 f
+  U2057/CO (ad01d1)                                0.39      9.68 f
+  U2055/CO (ad01d1)                                0.39     10.07 f
+  U2051/CO (ad01d1)                                0.39     10.46 f
+  U4152/CO (ad01d2)                                0.40     10.86 f
+  U2451/CO (ad01d1)                                0.38     11.24 f
+  U2154/CO (ad01d0)                                0.33     11.57 f
+  U4079/Z (xr03d1)                                 0.28     11.84 r
+  U4081/Z (xr03d1)                                 0.45     12.30 f
+  U4088/Z (xr03d1)                                 0.48     12.78 r
+  U4094/Z (xr03d1)                                 0.29     13.07 f
+  U4095/Z (xr03d1)                                 0.48     13.55 r
+  U4123/Z (xr03d1)                                 0.27     13.82 f
+  U4124/Z (xr03d1)                                 0.52     14.33 f
+  U3307/Z (xr03d1)                                 0.48     14.82 r
+  U3306/Z (xr02d1)                                 0.43     15.25 f
+  U3305/Z (xr02d1)                                 0.34     15.58 f
+  U2149/ZN (nd02d1)                                0.09     15.67 r
+  U4126/ZN (nd03d1)                                0.12     15.79 f
+  U2145/ZN (nr02d1)                                0.15     15.94 r
+  U4738/ZN (nd03d1)                                0.11     16.05 f
+  U4739/ZN (nr02d1)                                0.12     16.16 r
+  U4740/ZN (nd12d1)                                0.09     16.26 f
+  U2142/ZN (nd02d1)                                0.09     16.34 r
+  U2140/ZN (nd02d1)                                0.09     16.43 f
+  U4742/ZN (nd12d1)                                0.17     16.60 f
+  U4743/ZN (nd12d1)                                0.16     16.76 r
+  U4744/ZN (nd12d2)                                0.20     16.96 r
+  U2136/ZN (inv0d2)                                0.07     17.03 f
+  U4747/Z (or02d1)                                 0.26     17.29 f
+  U4750/ZN (aoi322d1)                              0.30     17.59 r
+  U4751/ZN (inv0d0)                                0.08     17.67 f
+  u_cpu/next_pc_reg_reg[2]/D (dfnrn1)              0.00     17.67 f
+  data arrival time                                         17.67
+
+  clock clk (rise edge)                           20.00     20.00
+  clock network delay (ideal)                      0.00     20.00
+  u_cpu/next_pc_reg_reg[2]/CP (dfnrn1)             0.00     20.00 r
+  clock uncertainty                               -0.20     19.80
+  library setup time                              -0.23     19.57
+  data required time                                        19.57
+  ------------------------------------------------------------------------
+  data required time                                        19.57
+  data arrival time                                        -17.67
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.91
+
+
+1

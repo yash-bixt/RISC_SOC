@@ -1,0 +1,138 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun May 24 18:54:04 2026
+| Host         : YashPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file nexys4_top_control_sets_placed.rpt
+| Design       : nexys4_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    60 |
+|    Minimum number of control sets                        |    60 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    44 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    60 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    48 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |              19 |            6 |
+| No           | Yes                   | No                     |              63 |           21 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1430 |          557 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                  Enable Signal                  |             Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+-------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|  CLK100MHZ_IBUF_BUFG |                                                 | rst_raw                                  |                1 |              2 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                 |                                          |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_rx/FSM_onehot_state[4]_i_1_n_0     | rst_ff2                                  |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_tx/E[0]                            | rst_ff2                                  |                4 |              6 |         1.50 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_status/rx_blink_cnt[22]_i_1_n_0    | rst_ff2                                  |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_tx/tx_busy_reg_1[0]                | rst_ff2                                  |                7 |              8 |         1.14 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_tx/tx_shift                        | rst_ff2                                  |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_rx/FSM_onehot_state_reg_n_0_[4]    | rst_ff2                                  |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_status/instr_blink_cnt[22]_i_1_n_0 | rst_ff2                                  |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_status/load_blink_cnt[22]_i_1_n_0  | rst_ff2                                  |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_rx/clk_count[9]_i_1_n_0            | rst_ff2                                  |                5 |             10 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_tx/state__0[2]                     | rst_ff2                                  |                4 |             11 |         2.75 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_rx/data_valid                      | rst_ff2                                  |                4 |             16 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_status/instr_blink_cnt_reg[2]_0[0] | u_soc/u_hex_parser/SR[0]                 |                7 |             16 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_status/load_blink_cnt_reg[2]_0[0]  | u_soc/u_loader/SR[0]                     |                7 |             16 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_status/E[0]                        | u_soc/u_uart_rx/SR[0]                    |                7 |             16 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG |                                                 | u_soc/u_loader/cpu_reset_reg_0[0]        |                8 |             28 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_uart_rx/hex_count08_out                 | u_soc/u_hex_parser/temp_word[27]_i_1_n_0 |                6 |             28 |         4.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_5_2[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               14 |             32 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_5_4[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               10 |             32 |         3.20 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_4_0[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |                9 |             32 |         3.56 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_5[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               11 |             32 |         2.91 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_8[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               11 |             32 |         2.91 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_4[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               10 |             32 |         3.20 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_0[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               13 |             32 |         2.46 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_5_3[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               14 |             32 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_5_0[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               11 |             32 |         2.91 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_7[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               11 |             32 |         2.91 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_2[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               12 |             32 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_5[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               13 |             32 |         2.46 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[21][31]_i_2_0[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               12 |             32 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_6[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               14 |             32 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_3[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               16 |             32 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_0[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               16 |             32 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_8[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               12 |             32 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_4[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               13 |             32 |         2.46 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/cpu_en_reg_1[0]              | u_soc/u_loader/cpu_reset_reg_0[0]        |               11 |             32 |         2.91 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[30][31]_i_3_1[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               12 |             32 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_hex_parser/instruction_valid1_out       | rst_ff2                                  |                6 |             32 |         5.33 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_hex_parser/instruction_valid            | rst_ff2                                  |               15 |             32 |         2.13 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[14][31]_i_2_0[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               14 |             32 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[30][31]_i_4_0[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               10 |             32 |         3.20 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[21][31]_i_2_1[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               13 |             32 |         2.46 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[30][31]_i_3_0[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               11 |             32 |         2.91 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[30][31]_i_3_2[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               12 |             32 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_2[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               14 |             32 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_5_1[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               13 |             32 |         2.46 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_6[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               14 |             32 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_1[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               15 |             32 |         2.13 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_3_3[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |               11 |             32 |         2.91 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/registers[31][31]_i_4_1[0]   | u_soc/u_loader/cpu_reset_reg_0[0]        |                7 |             32 |         4.57 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_hex_parser/E[0]                         | rst_ff2                                  |               16 |             40 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu//imem_reg_128_191_0_2_i_1_n_0       |                                          |               11 |             44 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu//imem_reg_64_127_0_2_i_1_n_0        |                                          |               11 |             44 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu//imem_reg_0_63_0_2_i_1_n_0          |                                          |               11 |             44 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu//imem_reg_192_255_0_2_i_1_n_0       |                                          |               11 |             44 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                 | rst_ff2                                  |               18 |             52 |         2.89 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/E[0]                         | u_soc/u_loader/cpu_reset_reg_0[0]        |               29 |             67 |         2.31 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/trace_pc                                  | u_soc/u_loader/cpu_reset_reg_0[0]        |               46 |             95 |         2.07 |
+|  CLK100MHZ_IBUF_BUFG | u_soc/u_cpu/u_imem/mem_write_gated              |                                          |               32 |            128 |         4.00 |
++----------------------+-------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+
+

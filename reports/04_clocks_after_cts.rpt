@@ -1,0 +1,38 @@
+[icc2-lic Mon May 25 10:18:36 2026] Command 'report_clocks' requires licenses
+[icc2-lic Mon May 25 10:18:36 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Mon May 25 10:18:36 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:18:36 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon May 25 10:18:36 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Mon May 25 10:18:36 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Mon May 25 10:18:36 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:18:36 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Mon May 25 10:18:36 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Mon May 25 10:18:36 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Mon May 25 10:18:36 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:18:36 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon May 25 10:18:36 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Mon May 25 10:18:36 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Mon May 25 10:18:36 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:18:36 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Mon May 25 10:18:36 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Mon May 25 10:18:36 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Mon May 25 10:18:36 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : clock
+Design : soc_top
+Mode   : default
+Version: U-2022.12-SP3
+Date   : Mon May 25 10:18:36 2026
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             20.00   {0 10}              p         {clk}
+
+1
