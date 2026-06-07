@@ -7,7 +7,8 @@ Custom 32-bit RISC Processor System-on-Chip designed in Verilog HDL with a custo
 * Custom 32-bit RISC CPU Architecture
 * Custom ISA and Assembler
 * UART-Based Program Loading Framework
-* FPGA Validation on Digilent Nexys-4 (Artix-7)
+* FPGA Validation using Xilinx Vivado
+* Digilent Nexys-4 (Artix-7) Deployment
 * 100 MHz FPGA Operation
 * RTL-to-GDSII ASIC Implementation
 * SCL 180nm Standard Cell Library
@@ -63,9 +64,10 @@ Following FPGA verification, the same RTL was implemented through a complete ASI
 ### FPGA Platform
 
 | Parameter         | Value                   |
-| ----------------- | ----------------------- |
+|-------------------|-------------------------|
 | FPGA Board        | Digilent Nexys-4        |
 | FPGA Device       | Xilinx Artix-7 XC7A100T |
+| FPGA Toolchain    | Xilinx Vivado           |
 | Clock Frequency   | 100 MHz                 |
 | Program Interface | UART                    |
 
@@ -121,13 +123,13 @@ The design was implemented using industry-standard ASIC design methodologies.
 * Successfully Completed RTL-to-GDSII Flow
 
 
-
 ## Skills Demonstrated
 
 * Computer Architecture
 * RTL Design
 * Verilog HDL
 * FPGA Prototyping
+* Xilinx Vivado
 * UART Communication
 * Custom ISA Design
 * Assembler Development
