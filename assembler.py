@@ -1,9 +1,10 @@
 import re
 import sys
+import serial
+import time
 
-# ==========================================================
-# ISA DEFINITIONS
-# ==========================================================
+COM_PORT = "COM8"
+BAUDRATE = 115200
 
 OP = {
     "RTYPE": 0b000000,
@@ -34,13 +35,8 @@ FUNCT = {
     "SLTU": 0b1100,
 }
 
-# ==========================================================
-# HELPERS
-# ==========================================================
-
 def reg(x):
-    x = x.upper().replace("R", "")
-    return int(x)
+    return int(x.upper().replace("R", ""))
 
 def imm16(x):
     return int(x, 0) & 0xFFFF
@@ -52,10 +48,6 @@ def clean(line):
 
 def tokenize(line):
     return [t for t in re.split(r"[,\s()]+", line.strip()) if t]
-
-# ==========================================================
-# ENCODERS
-# ==========================================================
 
 def encode_r(op, rd, rs1, rs2):
     return (
@@ -97,10 +89,6 @@ def encode_lui(rd, imm):
         imm16(imm)
     )
 
-# ==========================================================
-# FIRST PASS (LABELS)
-# ==========================================================
-
 def first_pass(lines):
 
     labels = {}
@@ -131,10 +119,6 @@ def first_pass(lines):
 
     return labels, cleaned
 
-# ==========================================================
-# ASSEMBLER
-# ==========================================================
-
 def assemble(lines):
 
     labels, cleaned = first_pass(lines)
@@ -147,9 +131,6 @@ def assemble(lines):
 
         op = t[0].upper()
 
-        # -------------------------
-        # R-TYPE
-        # -------------------------
         if op in FUNCT:
 
             word = encode_r(
@@ -159,9 +140,6 @@ def assemble(lines):
                 t[3]
             )
 
-        # -------------------------
-        # ADDI
-        # -------------------------
         elif op == "ADDI":
 
             word = encode_i(
@@ -171,9 +149,6 @@ def assemble(lines):
                 t[3]
             )
 
-        # -------------------------
-        # LW / SW
-        # -------------------------
         elif op in ("LW", "SW"):
 
             word = encode_mem(
@@ -183,9 +158,6 @@ def assemble(lines):
                 t[3]
             )
 
-        # -------------------------
-        # BEQ / BNE
-        # -------------------------
         elif op in ("BEQ", "BNE"):
 
             target = t[3]
@@ -202,9 +174,6 @@ def assemble(lines):
                 offset
             )
 
-        # -------------------------
-        # JUMP
-        # -------------------------
         elif op == "J":
 
             target = t[1]
@@ -219,9 +188,6 @@ def assemble(lines):
                 (addr & 0x03FFFFFF)
             )
 
-        # -------------------------
-        # LUI
-        # -------------------------
         elif op == "LUI":
 
             word = encode_lui(
@@ -229,16 +195,10 @@ def assemble(lines):
                 t[2]
             )
 
-        # -------------------------
-        # HALT
-        # -------------------------
         elif op == "HALT":
 
             word = OP["HALT"] << 26
 
-        # -------------------------
-        # NOP
-        # -------------------------
         elif op == "NOP":
 
             word = OP["NOP"] << 26
@@ -253,9 +213,54 @@ def assemble(lines):
 
     return machine
 
-# ==========================================================
-# MAIN
-# ==========================================================
+def upload(machine):
+
+    print(f"\nOpening {COM_PORT} ...")
+
+    ser = serial.Serial(
+        COM_PORT,
+        BAUDRATE,
+        timeout=1
+    )
+
+    time.sleep(2)
+
+    print("Uploading program...\n")
+
+    for instr in machine:
+
+        hexline = f"{instr:08X}"
+
+        print(hexline)
+
+        ser.write(
+            (hexline + "\n").encode()
+        )
+
+        time.sleep(0.05)
+
+    ser.write(b"RUN\n")
+
+    print("\nRUN sent.")
+    print("\nFPGA Output:\n")
+
+    try:
+        while True:
+
+            line = (
+                ser.readline()
+                .decode(errors="ignore")
+                .strip()
+            )
+
+            if line:
+                print(line)
+
+    except KeyboardInterrupt:
+
+        print("\nStopped.")
+
+    ser.close()
 
 def main():
 
@@ -268,17 +273,12 @@ def main():
 
         return
 
-    asm_file = sys.argv[1]
-
-    with open(asm_file, "r") as f:
+    with open(sys.argv[1], "r") as f:
         lines = f.readlines()
 
     machine = assemble(lines)
 
-    print("\nMachine Code:\n")
-
-    for word in machine:
-        print(f"{word:08X}")
+    upload(machine)
 
 if __name__ == "__main__":
     main()
