@@ -1,0 +1,19 @@
+# Vivado
+Vivado-Project/
+*.jou
+*.log
+*.str
+
+# Verdi
+verdi/
+*.fsdb
+
+# Reports archives
+*.zip
+
+# Simulation
+*.wdb
+*.vcd
+
+# Temporary
+*.tmp
