@@ -275,13 +275,13 @@ The design was taken through a complete RTL-to-GDSII ASIC implementation flow.
 
 ## Cell Statistics
 
-| Metric               | Value  |
-| -------------------- | ------ |
-| Total Standard Cells | 57,255 |
-| Combinational Cells  | 39,347 |
-| Sequential Cells     | 17,908 |
-| Buffers/Inverters    | 5,430  |
-
+| Metric               | Value |
+| -------------------- | ----- |
+| Total Standard Cells | 8,687 |
+| Combinational Cells  | 7,151 |
+| Sequential Cells     | 1,536 |
+| Buffers/Inverters    | 1,025 |
+| Memory Macros        | 8     |
 ---
 
 ## Physical Metrics
