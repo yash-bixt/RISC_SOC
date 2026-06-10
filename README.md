@@ -257,7 +257,7 @@ The design was taken through a complete RTL-to-GDSII ASIC implementation flow.
 | -------------------------- | -------- |
 | Clock Period               | 20 ns    |
 | Target Frequency           | 50 MHz   |
-| Critical Path Delay        | 19.61 ns |
+| Critical Path Delay        | 19.28 ns |
 | Worst Negative Slack (WNS) | 0.00 ns  |
 | Total Negative Slack (TNS) | 0.00 ns  |
 | Setup Violations           | 0        |
@@ -282,6 +282,7 @@ The design was taken through a complete RTL-to-GDSII ASIC implementation flow.
 | Sequential Cells     | 1,536 |
 | Buffers/Inverters    | 1,025 |
 | Memory Macros        | 8     |
+
 ---
 
 ## Physical Metrics
