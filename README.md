@@ -293,8 +293,8 @@ The design was taken through a complete RTL-to-GDSII ASIC implementation flow.
 | SRAM Macro Area         | 235,639.04 μm²  |
 | Macro Keepout Area      | 183,129.86 μm²  |
 | Final Utilization       | 46.91%          |
-| Routed Nets             | 57,784          |
-| Total Routed Wirelength | 8.25 Million μm |
+| Routed Nets             | 10,172          |
+| Total Routed Wirelength | 0.90 Million μm |
 
 ---
 
