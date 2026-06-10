@@ -359,7 +359,4 @@ The design was taken through a complete RTL-to-GDSII ASIC implementation flow.
 
 **Yash Sharma**
 
-Electrical & Computer Engineering
-Shiv Nadar University
-
 GitHub: https://github.com/yash-bixt
